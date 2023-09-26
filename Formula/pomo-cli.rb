@@ -5,21 +5,21 @@
 class PomoCli < Formula
   desc "Pomodoro Timer CLI tool"
   homepage "https://github.com/codeanish/homebrew-pomo-cli"
-  version "0.1.3"
+  version "0.1.4"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/codeanish/pomo-cli/releases/download/v0.1.3/pomo_Darwin_arm64.tar.gz"
-      sha256 "8a786aecaab7d3cd9ed592083b47becf7c289010cb40b5ce9eeb5f058909dc63"
+      url "https://github.com/codeanish/pomo-cli/releases/download/v0.1.4/pomo_Darwin_arm64.tar.gz"
+      sha256 "05d14387896c59d42c35534231f39bf00a71dc5ff5abe8e7faca41c166d9e040"
 
       def install
         bin.install "pomo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/codeanish/pomo-cli/releases/download/v0.1.3/pomo_Darwin_x86_64.tar.gz"
-      sha256 "bc6d6984fdfc1f91c430ae3d0945d3d62ea6363232291b5b86727f98bec02997"
+      url "https://github.com/codeanish/pomo-cli/releases/download/v0.1.4/pomo_Darwin_x86_64.tar.gz"
+      sha256 "6c6f597b6e5a4d1486a0e013030abedd50aa06659c9e30e4f2736dc54758784c"
 
       def install
         bin.install "pomo"
